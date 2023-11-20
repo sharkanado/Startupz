@@ -1,9 +1,9 @@
 import React from 'react';
+import Button from '../Button/Button';
 
 import style from './Hero.module.scss';
 
 import heroImage from '/img/hero_image.png';
-import Button from '../Button/Button';
 
 const Hero = () => {
   return (
