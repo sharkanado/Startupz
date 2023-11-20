@@ -1,0 +1,22 @@
+@import '@/styles/variables';
+
+button {
+  padding: 0.75rem 1.25rem;
+  border-radius: 3rem;
+}
+
+.button_solid_blue {
+  color: $white;
+  background-color: $complementary-color;
+}
+
+.button_solid_gray {
+  color: $white;
+  background-color: $text-color;
+}
+
+.button_outlined {
+  border: solid 1px;
+  border-color: $complementary-color;
+  color: $complementary-color;
+}
