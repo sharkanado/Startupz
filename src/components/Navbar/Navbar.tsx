@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 
 import style from './Navbar.module.scss';
 
@@ -9,10 +10,10 @@ const Navbar = () => {
     <nav className={style.navbar}>
       <img src={startupzLogo} />
       <div className={style.navbar__nav_wrapper}>
-        <a href="">Startups</a>
-        <a href="">Contact</a>
+        <a href="#our-works">Startups</a>
+        <a href="#contact">Contact</a>
         <div>
-          <button className={style.navbar__button}>Work with us</button>
+          <Button variant="outlined">Work with us!</Button>
         </div>
       </div>
     </nav>

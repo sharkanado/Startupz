@@ -1,0 +1,25 @@
+@import '@/styles/variables';
+
+.hero {
+  position: relative;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 7rem;
+  padding-bottom: 10rem;
+  h1 {
+    font-size: 5rem;
+    color: $text-color;
+    line-height: 1;
+  }
+  p {
+    color: $primary-color;
+    margin: 1.5rem 0;
+    font-size: 1.3rem;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+}
