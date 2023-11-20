@@ -1,7 +1,10 @@
 import React from 'react';
+import {Navbar} from '@/components';
 
-const App = () => {
-  return <div>Hello World</div>;
-};
+const App = () => (
+  <div>
+    <Navbar />
+  </div>
+);
 
 export default App;

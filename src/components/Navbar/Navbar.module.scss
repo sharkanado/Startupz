@@ -1,0 +1,20 @@
+@import '@/styles/variables';
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+
+.navbar__nav_wrapper {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.navbar__button {
+  border: solid 1px $complementary-color;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  color: $complementary-color;
+}
