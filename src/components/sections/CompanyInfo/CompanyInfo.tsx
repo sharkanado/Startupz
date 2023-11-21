@@ -5,6 +5,7 @@ import style from './CompanyInfo.module.scss';
 import questionMark from '/img/question_mark.svg';
 import thumb from '/img/thumb.png';
 import problemSolving from '/img/problem_solving.png';
+import {SectionHeader} from '@/components/UI';
 
 const CompanyInfo = () => {
   const steps = [
@@ -18,7 +19,7 @@ const CompanyInfo = () => {
       <div className={style.company_info__about}>
         <div className={style.company_info__inner_wrapper}>
           <div>
-            <h2>Who we are?</h2>
+            <SectionHeader>Who we are?</SectionHeader>
             <p>
               We create products that have innovation and technology at their
               core.
