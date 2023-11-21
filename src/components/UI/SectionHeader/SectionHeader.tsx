@@ -1,6 +1,6 @@
 import React, {forwardRef} from 'react';
 
-import './Heading.module.scss';
+import './SectionHeader.module.scss';
 
 const SectionHeader = forwardRef<
   HTMLHeadingElement,

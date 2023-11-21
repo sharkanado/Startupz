@@ -6,6 +6,7 @@ import questionMark from '/img/question_mark.svg';
 import thumb from '/img/thumb.png';
 import problemSolving from '/img/problem_solving.png';
 import {SectionHeader} from '@/components/UI';
+import Bullet from '@/components/common/Bullet/Bullet';
 
 const CompanyInfo = () => {
   const steps = [
@@ -33,7 +34,7 @@ const CompanyInfo = () => {
         </div>
         <div className={style.company_info__steps_wrapper}>
           {steps.map((step, idx) => (
-            <Step key={idx} id={idx + 1} text={step} />
+            <Bullet key={idx} title={idx + 1} text={step} />
           ))}
         </div>
       </div>
@@ -57,13 +58,3 @@ const CompanyInfo = () => {
 };
 
 export default CompanyInfo;
-
-const Step = ({id, text}: {id: number; text: string}) => {
-  return (
-    <div className={style.company_info__step}>
-      <div className={style.company_info__step_number}>0{id}</div>
-      <div className={style.company_info__step_divider} />
-      <p>{text}</p>
-    </div>
-  );
-};

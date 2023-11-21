@@ -1,0 +1,22 @@
+@import '@/styles/variables';
+
+.bullet {
+  margin-right: 3rem;
+
+  p {
+    color: $gray;
+    font-size: 1.5rem;
+  }
+
+  .bullet__number {
+    color: $primary-color;
+    font-size: 1.5rem;
+  }
+  .bullet__divider {
+    background: $gray;
+    height: 1px;
+    width: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+}
