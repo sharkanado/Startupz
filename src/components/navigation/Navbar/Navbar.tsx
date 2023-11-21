@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from '../Button/Button';
+import {Button} from '@/components/UI';
 
 import style from './Navbar.module.scss';
 

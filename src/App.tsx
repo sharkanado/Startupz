@@ -1,5 +1,6 @@
 import React from 'react';
-import {CompanyInfo, Hero, Navbar} from '@/components';
+import {Navbar} from '@/components/navigation';
+import {CompanyInfo, Hero} from '@/components/sections';
 
 const App = () => (
   <div>
