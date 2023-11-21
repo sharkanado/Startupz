@@ -1,0 +1,54 @@
+@import '@/styles/variables';
+
+.company_info {
+  padding: 4rem 2rem;
+  background: $light-gray;
+
+  .company_info__inner_wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  p {
+    color: $primary-color;
+    font-size: 1.3rem;
+    line-height: 150%;
+  }
+
+  h2 {
+    color: $gray;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: 4rem;
+  }
+  img {
+    padding-right: 5rem;
+  }
+
+  .company_info__steps_wrapper {
+    display: flex;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+  }
+
+  .company_info__step {
+    margin-right: 3rem;
+
+    p {
+      color: $gray;
+      font-size: 1.5rem;
+    }
+
+    .company_info__step_number {
+      color: $primary-color;
+      font-size: 1.5rem;
+    }
+    .company_info__step_divider {
+      background: $gray;
+      height: 1px;
+      width: 3rem;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}

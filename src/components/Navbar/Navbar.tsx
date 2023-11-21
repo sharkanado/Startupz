@@ -7,7 +7,7 @@ import startupzLogo from '/img/startupz_logo.svg';
 
 const Navbar = () => {
   return (
-    <nav className={style.navbar}>
+    <div className={style.navbar}>
       <img src={startupzLogo} />
       <div className={style.navbar__links_wrapper}>
         <a href="#our-works">Startups</a>
@@ -16,7 +16,7 @@ const Navbar = () => {
           <Button variant="outlined">Work with us!</Button>
         </div>
       </div>
-    </nav>
+    </div>
   );
 };
 

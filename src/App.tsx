@@ -1,10 +1,11 @@
 import React from 'react';
-import {Hero, Navbar} from '@/components';
+import {CompanyInfo, Hero, Navbar} from '@/components';
 
 const App = () => (
   <div>
     <Navbar />
     <Hero />
+    <CompanyInfo />
   </div>
 );
 
