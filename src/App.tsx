@@ -1,6 +1,6 @@
 import React from 'react';
 import {Navbar} from '@/components/navigation';
-import {CompanyInfo, CoreValues, Hero} from '@/components/sections';
+import {CompanyInfo, CoreValues, Hero, OurWorks} from '@/components/sections';
 
 const App = () => (
   <div>
@@ -8,6 +8,7 @@ const App = () => (
     <Hero />
     <CompanyInfo />
     <CoreValues />
+    <OurWorks />
   </div>
 );
 

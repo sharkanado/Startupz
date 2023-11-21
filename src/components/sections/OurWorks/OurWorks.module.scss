@@ -1,0 +1,61 @@
+@import '@/styles/variables';
+
+.our_works {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  .our_works__works_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding: 2rem 2rem;
+
+    .our_works__work {
+      display: flex;
+      flex-direction: column;
+      padding: 2rem 3rem;
+      align-items: center;
+      box-shadow: 4px 4px 24px 0px rgba(230, 230, 230, 1);
+      border-radius: 2rem;
+
+      h3 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        margin: 1rem;
+        line-height: 150%;
+        color: $gray;
+        text-align: center;
+        font-weight: 200;
+      }
+
+      img {
+        width: auto;
+        height: 180px;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  .our_works__slogan_section {
+    padding: 10rem 2rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    h3 {
+      color: $primary-color;
+      font-size: 2rem;
+      text-align: center;
+      max-width: 50rem;
+    }
+
+    img {
+      width: 60px;
+      height: auto;
+      margin-bottom: 1rem;
+    }
+  }
+}
