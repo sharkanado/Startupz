@@ -34,7 +34,7 @@ const CompanyInfo = () => {
         </div>
         <div className={style.company_info__steps_wrapper}>
           {steps.map((step, idx) => (
-            <Bullet key={idx} title={idx + 1} text={step} />
+            <Bullet key={idx} title={`0${idx + 1}`} text={step} />
           ))}
         </div>
       </div>
@@ -46,7 +46,7 @@ const CompanyInfo = () => {
             src={thumb}
             style={{transform: 'scaleX(-1)'}}
             className={style.company_info__thumb_img}
-          />{' '}
+          />
           <img
             className={style.company_info__assistance_img}
             src={problemSolving}
