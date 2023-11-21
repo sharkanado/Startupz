@@ -9,7 +9,7 @@ const Navbar = () => {
   return (
     <nav className={style.navbar}>
       <img src={startupzLogo} />
-      <div className={style.navbar__nav_wrapper}>
+      <div className={style.navbar__links_wrapper}>
         <a href="#our-works">Startups</a>
         <a href="#contact">Contact</a>
         <div>
