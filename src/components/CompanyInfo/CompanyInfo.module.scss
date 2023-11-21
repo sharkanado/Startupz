@@ -1,6 +1,6 @@
 @import '@/styles/variables';
 
-.company_info {
+.company_info__about {
   padding: 4rem 2rem;
   background: $light-gray;
 
@@ -50,5 +50,41 @@
       margin-top: 1rem;
       margin-bottom: 1rem;
     }
+  }
+}
+
+.company_info__slogan_section {
+  padding: 8rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  h3 {
+    font-weight: 200;
+    color: $primary-color;
+    font-size: 2.5rem;
+  }
+
+  .company_info__thumb_img {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .company_info__assistance_img {
+    width: 300px;
+  }
+
+  .company_info__slogan {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .company_info__assistance_img {
+    position: absolute;
+    bottom: 0;
+    right: -12rem;
   }
 }
