@@ -8,6 +8,10 @@
   background: $light-gray;
   padding-bottom: 5em;
 
+  h2 {
+    z-index: 10;
+  }
+
   p {
     font-size: 1.5rem;
     line-height: 150%;
@@ -15,20 +19,21 @@
     text-align: center;
     margin-bottom: 2rem;
     max-width: 32rem;
+    z-index: 10;
+  }
+
+  img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    z-index: 0;
   }
 
   .hiring_cta__img_left {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
     left: 0;
   }
   .hiring_cta__img_right {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto 0;
     right: 0;
   }
 }
