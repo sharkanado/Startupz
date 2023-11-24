@@ -45,7 +45,7 @@ const OurWorks = () => {
       <SectionHeader>Our Works</SectionHeader>
       <div className={style.our_works__works_wrapper}>
         {works.map(({name, img, description, color}) => (
-          <div className={style.our_works__work}>
+          <div key={name} className={style.our_works__work}>
             <h3 style={{color: color}}>{name}</h3>
             <p>{description}</p>
             <div style={{flex: 1}} />

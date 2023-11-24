@@ -8,14 +8,20 @@
     display: flex;
     justify-content: space-between;
     img {
-      padding-right: 5rem;
+      @media (min-width: $screen-md) {
+        padding-right: 5rem;
+      }
     }
   }
 
   .core_values__values_wrapper {
-    display: flex;
     gap: 5rem;
+    display: flex;
+    flex-direction: column;
     margin-top: 5rem;
     margin-bottom: 4rem;
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+    }
   }
 }

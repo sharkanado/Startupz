@@ -4,22 +4,43 @@
   position: relative;
   padding-right: 2rem;
   padding-left: 2rem;
-  padding-top: 14rem;
+  padding-top: 12rem;
   height: 100vh;
+  @media (min-width: $screen-md) {
+    padding-top: 14rem;
+  }
   h1 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     color: $gray;
     line-height: 1;
+    @media (min-width: $screen-sm) {
+      font-size: 4.5rem;
+    }
+    @media (min-width: $screen-lg) {
+      font-size: 5rem;
+    }
   }
   p {
     color: $primary-color;
     margin: 1.5rem 0;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    max-width: 20rem;
+    @media (min-width: $screen-sm) {
+      font-size: 1.5rem;
+      max-width: 80%;
+    }
+    @media (min-width: $screen-md) {
+      max-width: 100%;
+    }
   }
   img {
     position: absolute;
     right: 0;
     bottom: 0;
     z-index: -1;
+    opacity: 40%;
+    @media (min-width: $screen-lg) {
+      opacity: 1;
+    }
   }
 }

@@ -48,7 +48,13 @@ const CompanyInfo = () => {
             className={style.company_info__thumb_img}
           />
           <img
-            className={style.company_info__assistance_img}
+            className={style.company_info__assistance_img_desktop}
+            src={problemSolving}
+          />
+        </div>
+        <div className={style.company_info__assistance_img_mobile_wrapper}>
+          <img
+            className={style.company_info__assistance_img_mobile}
             src={problemSolving}
           />
         </div>

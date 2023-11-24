@@ -7,30 +7,51 @@
   .company_info__inner_wrapper {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    @media (min-width: $screen-lg) {
+      align-items: center;
+    }
   }
 
   p {
     color: $primary-color;
-    font-size: 1.3rem;
     line-height: 150%;
+    font-size: 1rem;
+
+    @media (min-width: $screen-md) {
+      font-size: 1.3rem;
+    }
   }
 
   img {
-    padding-right: 5rem;
+    @media (min-width: $screen-md) {
+      padding-right: 5rem;
+    }
   }
 
   .company_info__steps_wrapper {
     display: flex;
     margin-top: 6rem;
-    margin-bottom: 2rem;
+    gap: 3rem;
+    flex-direction: column;
+
+    @media (min-width: $screen-md) {
+      flex-direction: row;
+      gap: 4rem;
+    }
   }
 }
 
 .company_info__slogan_section {
   padding: 8rem 2rem;
   display: flex;
+  flex-direction: column;
+  width: 100%;
   justify-content: center;
   align-items: center;
+  @media (min-width: $screen-lg) {
+    flex-direction: row;
+  }
 
   h3 {
     color: $primary-color;
@@ -54,9 +75,22 @@
     gap: 2rem;
   }
 
-  .company_info__assistance_img {
-    position: absolute;
-    bottom: 0;
-    right: -12rem;
+  .company_info__assistance_img_desktop {
+    display: none;
+    @media (min-width: $screen-lg) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -12rem;
+    }
+  }
+
+  .company_info__assistance_img_mobile {
+    width: 300px;
+    margin-top: 3rem;
+    margin-left: 5rem;
+    @media (min-width: $screen-lg) {
+      display: none;
+    }
   }
 }
