@@ -18,7 +18,7 @@ const Button = forwardRef<HTMLButtonElement, ButtonProps>(
   ({variant = 'outlined', className, children, ...props}: ButtonProps, ref) => {
     return (
       <button
-        className={`${buttonVariants[variant]} ${className}`}
+        className={`${buttonVariants[variant]} ${className} ${style.button}`}
         ref={ref}
         {...props}
       >
