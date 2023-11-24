@@ -1,13 +1,13 @@
 import React, {forwardRef} from 'react';
 
-import './SectionHeader.module.scss';
+import style from './SectionHeader.module.scss';
 
 const SectionHeader = forwardRef<
   HTMLHeadingElement,
   React.HTMLAttributes<HTMLHeadingElement>
 >(({children, ...props}: React.HTMLAttributes<HTMLHeadingElement>, ref) => {
   return (
-    <h2 ref={ref} {...props}>
+    <h2 ref={ref} className={style.section_header} {...props}>
       {children}
     </h2>
   );
