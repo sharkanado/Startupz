@@ -9,6 +9,13 @@
   @media (min-width: $screen-md) {
     padding-top: 14rem;
   }
+  @media (min-width: $screen-2xl) {
+    height: 800px;
+  }
+  .hero__inner_wrapper {
+    max-width: $screen-2xl;
+    margin: 0 auto;
+  }
   h1 {
     font-size: 3.5rem;
     color: $gray;

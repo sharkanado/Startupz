@@ -4,24 +4,29 @@
   padding: 4rem 2rem;
   background: $light-gray;
 
-  .core_values__header_wrapper {
-    display: flex;
-    justify-content: space-between;
-    img {
-      @media (min-width: $screen-md) {
-        padding-right: 5rem;
+  .core_values__inner_wrapper {
+    max-width: $screen-2xl;
+    margin: 0 auto;
+
+    .core_values__header_wrapper {
+      display: flex;
+      justify-content: space-between;
+      img {
+        @media (min-width: $screen-md) {
+          padding-right: 5rem;
+        }
       }
     }
-  }
 
-  .core_values__values_wrapper {
-    gap: 5rem;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5rem;
-    margin-bottom: 4rem;
-    @media (min-width: $screen-md) {
-      flex-direction: row;
+    .core_values__values_wrapper {
+      gap: 5rem;
+      display: flex;
+      flex-direction: column;
+      margin-top: 5rem;
+      margin-bottom: 4rem;
+      @media (min-width: $screen-md) {
+        flex-direction: row;
+      }
     }
   }
 }

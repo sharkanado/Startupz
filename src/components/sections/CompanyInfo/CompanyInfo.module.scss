@@ -6,6 +6,8 @@
 
   .company_info__inner_wrapper {
     display: flex;
+    max-width: $screen-2xl;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: flex-start;
     @media (min-width: $screen-lg) {
@@ -31,7 +33,10 @@
 
   .company_info__steps_wrapper {
     display: flex;
-    margin-top: 6rem;
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    max-width: $screen-2xl;
+    margin: 0 auto;
     gap: 3rem;
     flex-direction: column;
 

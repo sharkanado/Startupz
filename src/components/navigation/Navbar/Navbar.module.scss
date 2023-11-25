@@ -6,10 +6,16 @@
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
   background: $white;
-  justify-content: space-between;
   padding: 1rem 2rem;
+
+  .navbar__inner_wrapper {
+    display: flex;
+    background: $white;
+    justify-content: space-between;
+    max-width: $screen-2xl;
+    margin: 0 auto;
+  }
 
   .navbar__links_wrapper {
     display: flex;

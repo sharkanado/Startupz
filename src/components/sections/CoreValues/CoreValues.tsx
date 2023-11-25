@@ -19,14 +19,16 @@ const CoreValues = () => {
   ];
   return (
     <section className={style.core_values}>
-      <div className={style.core_values__header_wrapper}>
-        <SectionHeader>Our core values</SectionHeader>
-        <img src={bulb} />
-      </div>
-      <div className={style.core_values__values_wrapper}>
-        {coreValues.map(({title, text}, idx) => (
-          <Bullet key={title} title={`0${idx + 1}. ${title}`} text={text} />
-        ))}
+      <div className={style.core_values__inner_wrapper}>
+        <div className={style.core_values__header_wrapper}>
+          <SectionHeader>Our core values</SectionHeader>
+          <img src={bulb} />
+        </div>
+        <div className={style.core_values__values_wrapper}>
+          {coreValues.map(({title, text}, idx) => (
+            <Bullet key={title} title={`0${idx + 1}. ${title}`} text={text} />
+          ))}
+        </div>
       </div>
     </section>
   );

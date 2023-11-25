@@ -13,12 +13,14 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   return width > 768 ? (
     <div className={style.navbar}>
-      <img src={startupzLogo} />
-      <div className={style.navbar__links_wrapper}>
-        <a href="#our-works">Startups</a>
-        <a href="#contact">Contact</a>
-        <div>
-          <Button variant="outlined">Work with us!</Button>
+      <div className={style.navbar__inner_wrapper}>
+        <img src={startupzLogo} />
+        <div className={style.navbar__links_wrapper}>
+          <a href="#our-works">Startups</a>
+          <a href="#contact">Contact</a>
+          <div>
+            <Button variant="outlined">Work with us!</Button>
+          </div>
         </div>
       </div>
     </div>
