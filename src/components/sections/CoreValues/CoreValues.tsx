@@ -1,6 +1,6 @@
 import React from 'react';
 import {SectionHeader} from '@/components/UI';
-import Bullet from '@/components/common/Bullet/Bullet';
+import {BulletPoint} from '@/components/common';
 
 import style from './CoreValues.module.scss';
 
@@ -26,7 +26,11 @@ const CoreValues = () => {
         </div>
         <div className={style.core_values__values_wrapper}>
           {coreValues.map(({title, text}, idx) => (
-            <Bullet key={title} title={`0${idx + 1}. ${title}`} text={text} />
+            <BulletPoint
+              key={title}
+              title={`0${idx + 1}. ${title}`}
+              text={text}
+            />
           ))}
         </div>
       </div>

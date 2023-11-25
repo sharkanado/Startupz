@@ -1,8 +1,8 @@
 import React from 'react';
 
-import style from './Bullet.module.scss';
+import style from './BulletPoint.module.scss';
 
-const Bullet = ({title, text}: {title: string; text: string}) => {
+const BulletPoint = ({title, text}: {title: string; text: string}) => {
   return (
     <div className={style.bullet}>
       <div className={style.bullet__number}>{title}</div>
@@ -12,4 +12,4 @@ const Bullet = ({title, text}: {title: string; text: string}) => {
   );
 };
 
-export default Bullet;
+export default BulletPoint;

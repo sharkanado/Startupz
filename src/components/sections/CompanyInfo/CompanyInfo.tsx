@@ -1,12 +1,12 @@
 import React from 'react';
+import {SectionHeader} from '@/components/UI';
+import {BulletPoint} from '@/components/common';
 
 import style from './CompanyInfo.module.scss';
 
 import questionMark from '/img/question_mark.svg';
 import thumb from '/img/thumb.png';
 import problemSolving from '/img/problem_solving.png';
-import {SectionHeader} from '@/components/UI';
-import Bullet from '@/components/common/Bullet/Bullet';
 
 const CompanyInfo = () => {
   const steps = [
@@ -34,7 +34,7 @@ const CompanyInfo = () => {
         </div>
         <div className={style.company_info__steps_wrapper}>
           {steps.map((step, idx) => (
-            <Bullet key={idx} title={`0${idx + 1}`} text={step} />
+            <BulletPoint key={idx} title={`0${idx + 1}`} text={step} />
           ))}
         </div>
       </div>
