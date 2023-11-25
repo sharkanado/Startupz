@@ -55,7 +55,11 @@
 
   h3 {
     color: $primary-color;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    @media (min-width: $screen-md) {
+      flex-direction: 2rem;
+    }
   }
 
   .company_info__thumb_img {
@@ -72,7 +76,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .company_info__assistance_img_desktop {
@@ -86,9 +90,12 @@
   }
 
   .company_info__assistance_img_mobile {
-    width: 300px;
+    width: 200px;
     margin-top: 3rem;
     margin-left: 5rem;
+    @media (min-width: $screen-sm) {
+      width: 300px;
+    }
     @media (min-width: $screen-lg) {
       display: none;
     }
