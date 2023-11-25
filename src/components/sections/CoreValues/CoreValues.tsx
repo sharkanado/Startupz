@@ -1,6 +1,5 @@
 import React from 'react';
-import {SectionHeader} from '@/components/UI';
-import {BulletPoint} from '@/components/common';
+import {SectionHeader, BulletPoint} from '@/components/common';
 
 import style from './CoreValues.module.scss';
 

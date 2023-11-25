@@ -1,5 +1,5 @@
 import React from 'react';
-import {Button, SectionHeader} from '@/components/UI';
+import {Button, SectionHeader} from '@/components/common';
 
 import style from './HiringCTA.module.scss';
 

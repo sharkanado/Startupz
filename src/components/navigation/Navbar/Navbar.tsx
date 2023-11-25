@@ -2,7 +2,7 @@ import React, {Dispatch, SetStateAction, useState} from 'react';
 import {useWindowSize} from 'react-use';
 import {IoClose, IoMenu} from 'react-icons/io5';
 import {AnimatePresence, motion} from 'framer-motion';
-import {Button} from '@/components/UI';
+import {Button} from '@/components/common';
 
 import style from './Navbar.module.scss';
 
@@ -26,7 +26,7 @@ const Navbar = () => {
     </div>
   ) : (
     <div>
-      <div className={style.navbar}>
+      <div className={style.navbar_mobile}>
         <img height="30px" src={startupzLogo} />
         <div>
           <Button

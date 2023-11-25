@@ -8,6 +8,7 @@
   right: 0;
   background: $white;
   padding: 1rem 2rem;
+  background: $white;
 
   .navbar__inner_wrapper {
     display: flex;
@@ -25,6 +26,19 @@
       color: $gray;
     }
   }
+}
+
+.navbar_mobile {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  padding: 1rem 2rem;
+  background: $white;
+  display: flex;
+  justify-content: space-between;
 }
 
 .mobile_menu {
