@@ -1,0 +1,74 @@
+@import '@/styles/variables';
+
+.footer {
+  display: flex;
+  max-width: $screen-xl;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 2rem 2rem;
+  padding-top: 5rem;
+  text-align: center;
+
+  img {
+    margin-bottom: 1rem;
+  }
+
+  @media (min-width: $screen-lg) {
+    flex-direction: row;
+    text-align: left;
+  }
+
+  p {
+    color: $footer-text-gray;
+  }
+
+  @media (min-width: $screen-lg) {
+    padding: 2rem 4rem;
+    padding-top: 5rem;
+  }
+
+  h4 {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $complementary-color;
+    transition: all 0.2s ease;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .footer__section {
+    flex: 1;
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    justify-content: space-between;
+    @media (min-width: $screen-lg) {
+      margin-right: 4rem;
+      max-width: 25%;
+
+      margin-bottom: 0;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      max-width: 20rem;
+    }
+  }
+
+  .footer__section__content {
+    flex-direction: column;
+    display: flex;
+    gap: 0.7rem;
+  }
+  .footer__section_socials {
+    @media (min-width: $screen-lg) {
+      width: 100px;
+    }
+  }
+}

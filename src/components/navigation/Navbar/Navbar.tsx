@@ -17,7 +17,7 @@ const Navbar = () => {
         <img src={startupzLogo} />
         <div className={style.navbar__links_wrapper}>
           <a href="#our-works">Startups</a>
-          <a href="#contact">Contact</a>
+          <a href="#footer">Contact</a>
           <div>
             <Button variant="outlined">Work with us!</Button>
           </div>
@@ -78,8 +78,12 @@ const MobileMenuDrawer = ({
                 </div>
               </div>
               <div className={style.mobile_menu__links_wrapper}>
-                <a href="#our-works">Startups</a>
-                <a href="#contact">Contact</a>
+                <a onClick={() => setIsMenuOpen(false)} href="#our-works">
+                  Startups
+                </a>
+                <a onClick={() => setIsMenuOpen(false)} href="#footer">
+                  Contact
+                </a>
                 <div>
                   <Button
                     className={style.mobile_menu__cta_button}

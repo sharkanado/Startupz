@@ -8,6 +8,7 @@ import {
   HiringCTA,
   OurWorks,
 } from '@/components/sections';
+import Footer from './components/navigation/Footer/Footer';
 
 const App = () => (
   <div>
@@ -18,6 +19,7 @@ const App = () => (
     <OurWorks />
     <HiringCTA />
     <ContactForm />
+    <Footer />
   </div>
 );
 

@@ -41,7 +41,7 @@ const OurWorks = () => {
     },
   ];
   return (
-    <section className={style.our_works}>
+    <section id="our-works" className={style.our_works}>
       <SectionHeader>Our Works</SectionHeader>
       <div className={style.our_works__works_wrapper}>
         {works.map(({name, img, description, color}) => (

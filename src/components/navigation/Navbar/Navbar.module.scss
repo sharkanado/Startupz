@@ -9,6 +9,11 @@
   background: $white;
   padding: 1rem 2rem;
   background: $white;
+  z-index: 100;
+
+  @media (min-width: $screen-lg) {
+    padding: 1rem 4rem;
+  }
 
   .navbar__inner_wrapper {
     display: flex;
