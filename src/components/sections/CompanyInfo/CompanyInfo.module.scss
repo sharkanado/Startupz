@@ -3,6 +3,9 @@
 .company_info__about {
   padding: 4rem 2rem;
   background: $light-gray;
+  @media (min-width: $screen-lg) {
+    padding: 4rem 4rem;
+  }
 
   .company_info__inner_wrapper {
     display: flex;

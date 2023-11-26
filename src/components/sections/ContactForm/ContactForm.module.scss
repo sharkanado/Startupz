@@ -58,17 +58,20 @@
         padding: 5rem 2rem 2rem 2rem;
       }
       @media (min-width: $screen-md) {
-        width: 50%;
+        width: 100%;
       }
       @media (min-width: $screen-lg) {
-        width: 45%;
+        width: 60%;
+      }
+      @media (min-width: $screen-xl) {
+        width: 50%;
       }
 
       textarea {
         height: 400px;
       }
       button {
-        margin-top: 2rem;
+        margin-top: 1rem;
       }
     }
   }

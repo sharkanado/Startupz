@@ -3,6 +3,9 @@
 .core_values {
   padding: 4rem 2rem;
   background: $light-gray;
+  @media (min-width: $screen-md) {
+    padding: 4rem 4rem;
+  }
 
   .core_values__inner_wrapper {
     max-width: $screen-2xl;

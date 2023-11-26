@@ -4,8 +4,13 @@
   position: relative;
   padding-right: 2rem;
   padding-left: 2rem;
+
   padding-top: 12rem;
   height: 100vh;
+  @media (min-width: $screen-lg) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
   @media (min-width: $screen-md) {
     padding-top: 14rem;
   }
