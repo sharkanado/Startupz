@@ -2,6 +2,7 @@ import React from 'react';
 import {Navbar} from '@/components/navigation';
 import {
   CompanyInfo,
+  ContactForm,
   CoreValues,
   Hero,
   HiringCTA,
@@ -16,6 +17,7 @@ const App = () => (
     <CoreValues />
     <OurWorks />
     <HiringCTA />
+    <ContactForm />
   </div>
 );
 
