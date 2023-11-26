@@ -1,6 +1,6 @@
 import React from 'react';
-import {Button, SectionHeader} from '@/components/common';
 import {useNavigate} from 'react-router-dom';
+import {Button, SectionHeader} from '@/components/common';
 
 import style from './HiringCTA.module.scss';
 

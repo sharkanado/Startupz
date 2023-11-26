@@ -1,10 +1,10 @@
 import React from 'react';
 import {Element} from 'react-scroll';
+import {IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter} from 'react-icons/io5';
 
 import style from './Footer.module.scss';
 
 import startupzLogo from '/img/startupz_logo.svg';
-import {IoLogoInstagram, IoLogoLinkedin, IoLogoTwitter} from 'react-icons/io5';
 
 const Footer = () => {
   const companies = [

@@ -2,13 +2,13 @@ import React, {Dispatch, SetStateAction, useState} from 'react';
 import {useWindowSize} from 'react-use';
 import {IoClose, IoMenu} from 'react-icons/io5';
 import {AnimatePresence, motion} from 'framer-motion';
+import {Link} from 'react-scroll';
+import {useNavigate} from 'react-router-dom';
 import {Button} from '@/components/common';
 
 import style from './Navbar.module.scss';
 
 import startupzLogo from '/img/startupz_logo.svg';
-import {useNavigate} from 'react-router-dom';
-import {Link} from 'react-scroll';
 
 const Navbar = () => {
   const {width} = useWindowSize();
