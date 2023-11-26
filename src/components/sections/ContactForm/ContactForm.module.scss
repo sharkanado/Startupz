@@ -3,6 +3,27 @@
 .contact_form {
   background: $secondary-color;
 
+  .contact_form__input {
+    background: $white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8rem 1rem;
+    width: 100%;
+  }
+
+  .contact_form__textarea {
+    background: $white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    padding: 0.8rem 1rem;
+    resize: none;
+    width: 100%;
+  }
+
   .contact_form__inner_wrapper {
     max-width: $screen-2xl;
     padding: 3rem 2rem;
