@@ -36,7 +36,7 @@ const Footer = () => {
           <h4>Companies</h4>
           <div className={style.footer__section__content}>
             {companies.map(({name, url}) => (
-              <a href={url} key={name}>
+              <a href={url} target="blank" key={name}>
                 {name}
               </a>
             ))}
@@ -55,7 +55,7 @@ const Footer = () => {
           <h4>Follow us</h4>
           <div className={style.footer__section__content}>
             {socials.map(({url, icon}, idx) => (
-              <a href={url} key={idx}>
+              <a href={url} target="blank" key={idx}>
                 {icon}
               </a>
             ))}
