@@ -1,26 +1,20 @@
 import React from 'react';
-import {Navbar} from '@/components/navigation';
-import {
-  CompanyInfo,
-  ContactForm,
-  CoreValues,
-  Hero,
-  HiringCTA,
-  OurWorks,
-} from '@/components/sections';
-import Footer from './components/navigation/Footer/Footer';
+import {Route, Routes} from 'react-router-dom';
+import {Home} from './pages';
 
+const applicationRoutes = [
+  {
+    name: 'Home',
+    path: '/',
+    component: <Home />,
+  },
+];
 const App = () => (
-  <div>
-    <Navbar />
-    <Hero />
-    <CompanyInfo />
-    <CoreValues />
-    <OurWorks />
-    <HiringCTA />
-    <ContactForm />
-    <Footer />
-  </div>
+  <Routes>
+    {applicationRoutes.map((route, idx) => (
+      <Route key={idx} path={route.path} element={route.component} />
+    ))}
+  </Routes>
 );
 
 export default App;

@@ -3,6 +3,7 @@
 .button_text {
   padding: 0.75rem 1.25rem;
   border-radius: 3rem;
+  transition: all 0.2s ease-in;
 }
 
 .button_solid_blue {
@@ -31,4 +32,12 @@
 }
 .button_icon:hover {
   background-color: #ddd;
+}
+
+.button_text:hover {
+  scale: 105%;
+}
+
+.button_text:active {
+  scale: 95%;
 }
