@@ -1,5 +1,5 @@
 import React from 'react';
-import {Navbar} from '@/components/navigation';
+import {Navbar, Footer} from '@/components/navigation';
 import {
   CompanyInfo,
   ContactForm,
@@ -8,7 +8,6 @@ import {
   HiringCTA,
   OurWorks,
 } from '@/components/sections';
-import Footer from '@/components/navigation/Footer/Footer';
 
 const Home = () => (
   <div>

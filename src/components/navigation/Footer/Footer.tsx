@@ -1,4 +1,5 @@
 import React from 'react';
+import {Element} from 'react-scroll';
 
 import style from './Footer.module.scss';
 
@@ -20,46 +21,48 @@ const Footer = () => {
   ];
 
   return (
-    <footer id="footer" className={style.footer}>
-      <div className={style.footer__section}>
-        <img src={startupzLogo} alt="logo" />
-        <p>
-          © 2020 Startupz. <br />
-          All rights reserved.
-        </p>
-      </div>
-      <div style={{flex: 1}} />
-
-      <div className={style.footer__section}>
-        <h4>Companies</h4>
-        <div className={style.footer__section__content}>
-          {companies.map(({name, url}) => (
-            <a href={url} key={name}>
-              {name}
-            </a>
-          ))}
+    <Element name="footer">
+      <footer id="footer" className={style.footer}>
+        <div className={style.footer__section}>
+          <img src={startupzLogo} alt="logo" />
+          <p>
+            © 2020 Startupz. <br />
+            All rights reserved.
+          </p>
         </div>
-      </div>
-      <div className={style.footer__section}>
-        <h4>Contact</h4>
-        <p>
-          World Trade Center - The Hague Prinses Margrietplantsoen 33 2595 AM
-          The Hague The Netherlands
-        </p>
-        <a href="mailto:startupz@email.com">Send us an email</a>
-      </div>
+        <div style={{flex: 1}} />
 
-      <div className={style.footer__section_socials}>
-        <h4>Follow us</h4>
-        <div className={style.footer__section__content}>
-          {socials.map(({url, icon}, idx) => (
-            <a href={url} key={idx}>
-              {icon}
-            </a>
-          ))}
+        <div className={style.footer__section}>
+          <h4>Companies</h4>
+          <div className={style.footer__section__content}>
+            {companies.map(({name, url}) => (
+              <a href={url} key={name}>
+                {name}
+              </a>
+            ))}
+          </div>
         </div>
-      </div>
-    </footer>
+        <div className={style.footer__section}>
+          <h4>Contact</h4>
+          <p>
+            World Trade Center - The Hague Prinses Margrietplantsoen 33 2595 AM
+            The Hague The Netherlands
+          </p>
+          <a href="mailto:startupz@email.com">Send us an email</a>
+        </div>
+
+        <div className={style.footer__section_socials}>
+          <h4>Follow us</h4>
+          <div className={style.footer__section__content}>
+            {socials.map(({url, icon}, idx) => (
+              <a href={url} key={idx}>
+                {icon}
+              </a>
+            ))}
+          </div>
+        </div>
+      </footer>
+    </Element>
   );
 };
 

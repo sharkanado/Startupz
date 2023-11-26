@@ -1,5 +1,6 @@
 import React from 'react';
 import {Button, SectionHeader} from '@/components/common';
+import {useNavigate} from 'react-router-dom';
 
 import style from './HiringCTA.module.scss';
 
@@ -7,6 +8,8 @@ import hiring_left from '/img/hiring_left.png';
 import hiring_right from '/img/hiring_right.png';
 
 const HiringCTA = () => {
+  const navigate = useNavigate();
+
   return (
     <div className={style.hiring_cta}>
       <img src={hiring_left} className={style.hiring_cta__img_left} />
@@ -18,7 +21,9 @@ const HiringCTA = () => {
         <br /> Check out our current openings
       </p>
       <div>
-        <Button variant="solid-blue">See Current Openings</Button>
+        <Button onClick={() => navigate('/hiring')} variant="solid-blue">
+          See Current Openings
+        </Button>
       </div>
     </div>
   );

@@ -7,19 +7,29 @@ import {Button} from '@/components/common';
 import style from './Navbar.module.scss';
 
 import startupzLogo from '/img/startupz_logo.svg';
+import {useNavigate} from 'react-router-dom';
+import {Link} from 'react-scroll';
 
 const Navbar = () => {
   const {width} = useWindowSize();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return width > 768 ? (
     <div className={style.navbar}>
       <div className={style.navbar__inner_wrapper}>
-        <img src={startupzLogo} />
+        <a href="/">
+          <img src={startupzLogo} />
+        </a>
         <div className={style.navbar__links_wrapper}>
-          <a href="#our-works">Startups</a>
-          <a href="#footer">Contact</a>
+          <a href="/#our-works">Startups</a>
+          <Link to="footer" smooth={true}>
+            Contact
+          </Link>
           <div>
-            <Button variant="outlined">Work with us!</Button>
+            <Button onClick={() => navigate('/hiring')} variant="outlined">
+              Work with us!
+            </Button>
           </div>
         </div>
       </div>
@@ -27,7 +37,9 @@ const Navbar = () => {
   ) : (
     <div>
       <div className={style.navbar_mobile}>
-        <img height="30px" src={startupzLogo} />
+        <a href="/">
+          <img height="30px" src={startupzLogo} />
+        </a>
         <div>
           <Button
             variant="icon"
@@ -52,6 +64,8 @@ const MobileMenuDrawer = ({
   isOpen: boolean;
   setIsMenuOpen: Dispatch<SetStateAction<boolean>>;
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div>
       <AnimatePresence>
@@ -78,7 +92,7 @@ const MobileMenuDrawer = ({
                 </div>
               </div>
               <div className={style.mobile_menu__links_wrapper}>
-                <a onClick={() => setIsMenuOpen(false)} href="#our-works">
+                <a onClick={() => setIsMenuOpen(false)} href="/#our-works">
                   Startups
                 </a>
                 <a onClick={() => setIsMenuOpen(false)} href="#footer">
@@ -88,6 +102,7 @@ const MobileMenuDrawer = ({
                   <Button
                     className={style.mobile_menu__cta_button}
                     variant="outlined"
+                    onClick={() => navigate('/hiring')}
                   >
                     Work with us!
                   </Button>
