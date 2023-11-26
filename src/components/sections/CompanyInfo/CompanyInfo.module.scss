@@ -66,7 +66,7 @@
     font-size: 1.5rem;
     text-align: center;
     @media (min-width: $screen-md) {
-      flex-direction: 2rem;
+      font-size: 2rem;
     }
   }
 
@@ -92,8 +92,8 @@
     @media (min-width: $screen-lg) {
       display: block;
       position: absolute;
-      bottom: 0;
-      right: -12rem;
+      bottom: -2rem;
+      right: -13rem;
     }
   }
 
