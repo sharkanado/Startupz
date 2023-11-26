@@ -51,7 +51,7 @@
     bottom: 0;
     z-index: -1;
     opacity: 40%;
-    @media (min-width: $screen-lg) {
+    @media (min-width: $screen-xl) {
       opacity: 1;
     }
   }
